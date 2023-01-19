@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "axios": "^1.2.3",
+    "cors": "^2.8.5",
     "next": "13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
