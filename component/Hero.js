@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="flex flex-col gap-5">
       <p className="text-lg font-medium bg-cyan-100 text-cyan-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">Coming soon</p>
       <p className="text-6xl font-bold">Win The AI <br /> Revolution 🤖 </p>
-      <p className="text-base">Join over one hundred internet natives <br />signing up for the first AI prompt exchange.</p>
+      <p className="text-base">Join over one hundred internet natives <br />signed up for the first AI prompt exchange.</p>
       <div className="flex gap-5">
           <input placeholder="Enter you email..." type="email" className="border border-gray-200 rounded-xl focus:outline-none focus:shadow-xl shadow-sm px-4" />
           <button className="px-6 py-3 bg-gradient-to-r from-[#aacee0] to-[#b2eded] rounded-2xl hover:scale-95 duration-300 transition text-cyan-800 shadow-xl font-medium">Notify Me </button>
