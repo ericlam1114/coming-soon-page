@@ -46,7 +46,7 @@ const Hero = () => {
           Coming soon
         </p>
         <p className="text-6xl font-bold">
-          Win The AI <br /> Revolution 🤖{" "}
+          Win The AI <br /> Revolution✨{" "}
         </p>
         <p className="text-base">
           Join over one hundred internet natives <br />
