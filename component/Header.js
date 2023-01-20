@@ -16,9 +16,10 @@ function Header() {
         />
         <meta
           property="og:image"
-          content="https://imgur.com/a/Rs2MIN1"
+          content="https://postimg.cc/MXr1xw2H"
         />
       </Head>
+   
 
       <div class="flex flex-col justify-center -mt-8 items-center md:items-baseline -mb-10 md:-mb-56">
         <img
