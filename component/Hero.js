@@ -40,7 +40,7 @@ const Hero = () => {
     }
   };
   return (
-    <div className="container mx-auto h-screen flex flex-col md:flex-row justify-between items-center md:-mt-40">
+    <div className="container mx-auto h-screen flex flex-col md:flex-row justify-between items-center ">
       <div className="flex flex-col gap-5">
         <p className="text-lg font-medium bg-cyan-100 text-cyan-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
           Coming soon
