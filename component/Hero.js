@@ -5,62 +5,35 @@ import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
-
 const Hero = () => {
+  const [formData, setFormData] = useState({});
   const [email, setEmail] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleInputChange = (event) => {
+    setEmail(event.target.value);
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     try {
-      mailchimp.setConfig({
-        apiKey: "fe57b50cf1bc5c29ec5c21c885d9380a-us14",
-        server: "us14",
-      });
+      console.log(formData);
+      // appendSpreadsheet(formData)
+      // setEmail('');
+      // console.log(email);
 
-      const event = {
-        name: "JS Developers Meetup",
+      const data = {
+        Email: email,
       };
 
-      const footerContactInfo = {
-        company: "Mailchimp",
-        address1: "675 Ponce de Leon Ave NE",
-        address2: "Suite 5000",
-        city: "Atlanta",
-        state: "GA",
-        zip: "30308",
-        country: "US",
-      };
-
-      const campaignDefaults = {
-        from_name: "Gettin' Together",
-        from_email: "gettintogether@example.com",
-        subject: "JS Developers Meetup",
-        language: "EN_US",
-      };
-
-      const listId = "bde9e8b4f3";
-      const subscribingUser = {
-        //   firstName: "Prudence",
-        //   lastName: "McVankab",
-        email: email,
-      };
-
-      async function run() {
-        const response = await mailchimp.lists.addListMember(listId, {
-          email_address: subscribingUser.email,
-          status: "subscribed",
-          merge_fields: {
-            FNAME: subscribingUser.firstName,
-            LNAME: subscribingUser.lastName,
-          },
-        });
-
-        console.log(
-          `Successfully added contact as an audience member. The contact's id is ${response.id}.`
-        );
-      }
-
-      run();
+      axios
+        .post(
+          "https://sheet.best/api/sheets/d72fe0c5-266c-42ae-90d2-a70757956234",
+          data
+        )
+        .then((response) => console.log(response));
+        alert('email submitted successfully')
+      setEmail("");
     } catch (err) {
       console.error(err);
       alert("Error subscribing. Please try again later.");
@@ -82,10 +55,10 @@ const Hero = () => {
         <form onSubmit={handleSubmit}>
           <div className="flex gap-5">
             <input
-              placeholder="Enter you email..."
+              placeholder="Enter your email..."
               type="email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={handleInputChange}
               className="border border-gray-200 rounded-xl focus:outline-none focus:shadow-xl shadow-sm px-4"
             />
             <button className="px-6 py-3 bg-gradient-to-r from-[#aacee0] to-[#b2eded] rounded-2xl hover:scale-95 duration-300 transition text-cyan-800 shadow-xl font-medium">
