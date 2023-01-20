@@ -72,7 +72,7 @@ const Hero = () => {
           {/* <BsYoutube className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
         </div>
       </div>
-      <img src="/bot.png" className="max-w-xl" alt="" />
+      <img src="/bot.png" className="max-w-sm lg:max-w-lg" alt="" />
     </div>
   );
 };
