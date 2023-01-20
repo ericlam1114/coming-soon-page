@@ -16,7 +16,7 @@ function Header() {
         />
         <meta
           property="og:image"
-          content="./public/botwarrior.jpg"
+          content="https://imgur.com/a/Rs2MIN1"
         />
       </Head>
 
