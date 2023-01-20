@@ -16,7 +16,7 @@ function Header() {
         />
         <meta
           property="og:image"
-          content="https://postimg.cc/MXr1xw2H"
+          content="https://i.postimg.cc/vHWBsbyN/Bot-Warrior-io.jpg"
         />
       </Head>
    
