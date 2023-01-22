@@ -5,6 +5,8 @@ import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
+CONNECTION_URL = "GET FROM www.sheet.best";
+
 const Hero = () => {
   const [formData, setFormData] = useState({});
   const [email, setEmail] = useState("");
@@ -28,7 +30,7 @@ const Hero = () => {
 
       axios
         .post(
-          "https://sheet.best/api/sheets/d72fe0c5-266c-42ae-90d2-a70757956234",
+          "https://sheet.best/api/sheets/{CONNECTION_URL}",
           data
         )
         .then((response) => console.log(response));
