@@ -5,18 +5,18 @@ function Header() {
   return (
     <div>
       <Head>
-        <title>AI Prompt Exchange</title>
+        <title>Podcast Advertising Made Simplee</title>
 
-        <meta name="description" content="AI Prompt Exchange" key="desc" />
-        <meta property="og:title" content="AI Prompt Exchange" />
+        <meta name="description" content="Podcast Advertising Made Simple" key="desc" />
+        <meta property="og:title" content="Podcast Advertising Made Simple" />
         <meta
           property="og:description"
-          content="Join over one hundred internet natives
-            signed up for the first AI prompt exchange."
+          content="Join over one hundred podcasters signed up to monetize
+          their podcasts with branded in-stream ads, the easy way."
         />
         <meta
           property="og:image"
-          content="https://i.postimg.cc/vHWBsbyN/Bot-Warrior-io.jpg"
+          content="https://i.postimg.cc/T1Zv1ZY5/poderly.png"
         />
       </Head>
    

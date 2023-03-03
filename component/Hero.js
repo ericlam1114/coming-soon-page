@@ -5,7 +5,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
-CONNECTION_URL = "GET FROM www.sheet.best";
+const CONNECTION_URL = "https://sheet.best/api/sheets/bab566a2-d238-4430-a4f6-77c8bd90f773";
 
 const Hero = () => {
   const [formData, setFormData] = useState({});
@@ -44,15 +44,15 @@ const Hero = () => {
   return (
     <div className="container mx-auto h-screen flex flex-col md:flex-row justify-between items-center ">
       <div className="flex flex-col gap-5">
-        <p className="text-lg font-medium bg-cyan-100 text-cyan-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
-          Coming soon
+        <p className="text-lg font-medium bg-green-100 text-green-700 uppercase px-3 flex justify-center rounded-3xl py-2 w-48">
+          Coming April 1
         </p>
         <p className="text-6xl font-bold">
-          Win The AI <br /> Revolution✨{" "}
+          Podcast Advertising <br /> Made Simple{" "}
         </p>
         <p className="text-base">
-          Join over one hundred internet natives <br />
-          signed up for the first AI prompt exchange.
+          Join over one hundred podcasters signed up to monetize<br />
+          their podcasts with branded in-stream ads, the easy way.
         </p>
         <form onSubmit={handleSubmit}>
           <div className="flex gap-5">
@@ -63,18 +63,18 @@ const Hero = () => {
               onChange={handleInputChange}
               className="border border-gray-200 rounded-xl focus:outline-none focus:shadow-xl shadow-sm px-4"
             />
-            <button className="px-6 py-3 bg-gradient-to-r from-[#aacee0] to-[#b2eded] rounded-2xl hover:scale-95 duration-300 transition text-cyan-800 shadow-xl font-medium">
+            <button className="px-6 py-3 bg-gradient-to-r from-[#181918] to-[#262927] rounded-2xl hover:scale-95 duration-300 transition text-white shadow-xl font-medium">
               Notify Me{" "}
             </button>
           </div>
         </form>
-        <div className="flex gap-5">
-          <BsTwitter className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" />
+        {/* <div className="flex gap-5"> */}
+          {/* <BsTwitter className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer" /> */}
           {/* <RiInstagramFill className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
           {/* <BsYoutube className="text-4xl rounded-xl text-cyan-700 bg-cyan-100 px-2 py-2 hover:scale-95 duration-300 transition cursor-pointer"/> */}
-        </div>
+        {/* </div> */}
       </div>
-      <img src="/bot.png" className="max-w-sm lg:max-w-lg" alt="" />
+      <img src="/mic.png" className="max-w-sm lg:max-w-sm" alt="" />
     </div>
   );
 };
