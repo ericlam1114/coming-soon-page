@@ -5,7 +5,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import axios from "axios";
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
-const CONNECTION_URL = "https://sheet.best/api/sheets/bab566a2-d238-4430-a4f6-77c8bd90f773";
+const CONNECTION_URL = "bab566a2-d238-4430-a4f6-77c8bd90f773";
 
 const Hero = () => {
   const [formData, setFormData] = useState({});
